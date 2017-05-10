@@ -1,4 +1,13 @@
-<h1>Home Page</h1>
-<h4 class="room" ng-repeat="room in home.rooms">
-  {{room.$value}}
-</h4>
+<section>
+    <div class="rooms">
+        <h1>Bloc Chat</h1>
+
+        <div ng-controller='ModalCtrl as modal'>
+            <button type="button" class="btn btn-default" ng-click="modal.open()">New room</button>
+        </div>
+
+        <h4 ng-repeat="room in home.rooms">
+            {{ room.$value }}
+        </h4>
+    </div>
+</section>

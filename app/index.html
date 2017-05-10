@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <title>Bloc Chat</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css">
 </head>
 <body>
   <ui-view></ui-view>
-
-  <!-- AngularUI Bootstrap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
 
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -25,6 +23,8 @@
 
   <script>
     // Initialize Firebase
+    // Mike's note: The Firebase name is misleading.
+    //   "bloc-jams-angular-33464" refers to my Bloc Chat database.
     var config = {
       apiKey: "AIzaSyBhTy5p0pweqSX6ls5JXfT6tDLn0ZkSquY",
       authDomain: "bloc-jams-angular-33464.firebaseapp.com",
@@ -36,10 +36,17 @@
     firebase.initializeApp(config);
   </script>
 
+  <!-- AngularUI Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
   <!-- Application Files -->
   <script src="/scripts/app.js"></script>
   <script src="/scripts/controllers/HomeCtrl.js"></script>
   <script src="/scripts/services/Room.js"></script>
+  <script src="/scripts/controllers/ModalCtrl.js"></script>
+  <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 
 </body>
 </html>
