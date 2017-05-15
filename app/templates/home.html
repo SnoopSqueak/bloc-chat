@@ -19,5 +19,9 @@
           <td class="timestamp message">{{ message.sentAt }}</td>
         </tr>
       </table>
+      <form ng-submit="home.send(home.message, currentRoom)">
+        <input ng-model="home.message" class="input-bar" type="text" placeholder="Type a message here">
+        <button class="send-button">Send</button>
+      </form>
     </div>
 </section>

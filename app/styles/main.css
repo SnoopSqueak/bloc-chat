@@ -69,3 +69,15 @@
 .message {
   padding: 5px;
 }
+
+.input-bar {
+  width: 95%;
+  padding: 50px;
+  position: relative;
+  display: inline;
+}
+
+.send-button {
+  display: inline;
+  padding: 5px;
+}
