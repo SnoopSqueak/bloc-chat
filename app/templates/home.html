@@ -6,8 +6,18 @@
             <button type="button" class="btn btn-default" ng-click="modal.open()">New room</button>
         </div>
 
-        <h4 ng-repeat="room in home.rooms">
-            {{ room.$value }}
-        </h4>
+          <h4 class="room" ng-repeat="room in home.rooms" ng-click="home.changeRoom(room)">
+              {{ room.$value }}
+          </h4>
+    </div>
+    <div class="room-pane">
+      <h3>Room name: {{ currentRoom.$value }}</h3>
+      <table class="messages">
+        <tr ng-repeat="message in messages">
+          <td class="username message">{{ message.username }}:</td>
+          <td class="content message">{{ message.content }}</td>
+          <td class="timestamp message">{{ message.sentAt }}</td>
+        </tr>
+      </table>
     </div>
 </section>

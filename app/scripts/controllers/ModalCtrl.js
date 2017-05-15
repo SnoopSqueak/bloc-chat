@@ -6,7 +6,6 @@
                 templateUrl : '/templates/modal.html',
                 controller: 'ModalInstanceCtrl',
                 controllerAs: 'modal'
-
             });
 
            modalInstance.result.then(function(name) {

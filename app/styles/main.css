@@ -1,0 +1,71 @@
+.rooms {
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background-color: #5555AA;
+  color: black;
+  padding: 10px;
+}
+
+.room:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.room-pane {
+  width: 85%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  background-color: #EEEEEE;
+  padding: 10px;
+}
+
+.message {
+  border: 1px solid #AAAAFF;
+  color: #0000DD;
+  padding: 5px;
+}
+
+.modal {
+  display: block;
+}
+
+.modal-body:before,
+  .modal-body:after {
+    display: table;
+    content: " ";
+}
+
+.modal-header:before,
+.modal-header:after {
+  display: table;
+  content: " ";
+}
+
+.username {
+  font-weight: bold;
+  width: 5%;
+  left: 0;
+}
+
+.content {
+  left: 0;
+  width: 90%;
+}
+
+.timestamp {
+  right: 0;
+  font-style: oblique;
+  width: 5%;
+  color: #9999FF;
+}
+
+.messages {
+  width: 100%;
+}
+
+.message {
+  padding: 5px;
+}
